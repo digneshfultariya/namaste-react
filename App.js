@@ -1,9 +1,12 @@
+import React from 'react';
+import ReactDOM from'react-dom';
+
 const heading = React.createElement("h1",{
     id:"heading"
 }, "Namaste Everyone!!");
 
 const paragraph = React.createElement("p",{
-    id:"intro"
+    id:"introduction"
 }, "Namaste Everyone from React CDN!!");
 
 const div = React.createElement("div",{
