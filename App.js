@@ -1,21 +1,25 @@
-import React from 'react';
-import ReactDOM from'react-dom';
+import React from "react";
+import ReactDOM, { createRoot } from "react-dom/client";
 
-const heading = React.createElement("h1",{
-    id:"heading"
-}, "Namaste Everyone!!");
+const Title = () => (
+  <h1 id="title" key="h2">
+    Namaste React
+  </h1>
+);
 
-const paragraph = React.createElement("p",{
-    id:"introduction"
-}, "Namaste Everyone from React CDN!!");
-
-const div = React.createElement("div",{
-    id:"container"
-}, [heading, paragraph]);
-
-
+// Composing Comopnentss
+const HeaderComponent = () => {
+  return (
+    <div>
+      <Title />
+      <h2>Namaste React functional component</h2>
+      <h2>Hello Developers...</h2>
+    </div>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(div);
+root.render(<HeaderComponent />);
+
 
 
