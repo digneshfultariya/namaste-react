@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Title = () => (
     <a href="/">
       <img
@@ -10,17 +12,22 @@ const Title = () => (
 
   
 const Header = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const toggle = () => {
+      setIsLoggedIn((prevState) => !prevState)
+  }
+
     return (
       <div className="header">
-        <Title />
-        <div className="nav-items">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Cart</li>
+          <Title />
+          <ul className='nav-items'>
+              <li>Home</li>
+              <li>About</li>
+              <li>Offers</li>
+              <li>Cart</li>
           </ul>
-        </div>
+          <button className="login-btn" onClick={toggle}>{isLoggedIn ? 'Login' : 'Log out'}</button>
       </div>
     );
   };

@@ -7,10 +7,18 @@
 }
 
 .nav-items {
+    cursor: pointer;
     display: flex;
     align-items: center;
+    list-style-type: none;
     margin-right: 20px;
+    font-size: 20px;
     font-family: Dialog, serif;
+}
+
+.nav-items > li {
+    padding: 18px;
+    color: black;
 }
 
 .search-container {
@@ -21,6 +29,7 @@
     width: 100%;
     height: 100%;
 }
+
 .search-input {
     width: 40%;
     height: 35px;
@@ -39,16 +48,6 @@
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.nav-items > ul{
-    list-style-type: none;
-    display: flex;
-    cursor: pointer;
-}
-
-.nav-items > ul > li {
-    padding: 10px;
 }
 
 .logo {
@@ -118,4 +117,85 @@
     margin-left: auto;
     margin-right: auto;
     width: 70vw;
+}
+
+/* shimmer */
+.shimmer-restaurant-container {
+    margin: 20px;
+    padding: 15px;
+    width: 25%;
+}
+
+.shimmer-image-background {
+    width: 308px;
+    height: 220px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    animation: shimmer 1s linear infinite alternate;
+}
+
+.shimmer-main-content {
+    margin-top: 15px;
+    height: 30px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    animation: shimmer 1s linear infinite alternate;
+}
+
+.content1 {
+    width: 307px;
+}
+
+.content2 {
+    width: 160px;
+}
+
+.shimmer-restaurant-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.shimmer-separator {
+    padding: 3px;
+    color: lightgrey;
+}
+
+.shimmer-sub-content {
+    width: 60px;
+    height: 30px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    animation: shimmer 1s linear infinite alternate;
+}
+
+@keyframes shimmer {
+    0% {
+        background-color: hsl(200, 20%, 86%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.loader-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+}
+
+.login-btn {
+    height: 42px;
+    width: 95px;
+    padding: 1px 2px;
+    background-color: black;
+    opacity: 90%;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto 20px auto 10px;
 }
