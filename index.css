@@ -1,3 +1,92 @@
-#container{
-    background-color: aliceblue;
+.header {
+    display: flex;
+    justify-content: space-between ;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-items > ul{
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.restaurant-container {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.restaurant-container > img{
+    width: 100%;
+}
+
+.names {
+    font-family: "Apple Chancery", serif;
+    font-size: 22px;
+    word-wrap: initial;
+}
+
+.categories {
+    font-family: "Apple Chancery", serif;
+    font-size: 15px;
+    color: grey;
+}
+
+.restaurant-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Dialog, serif;
+    font-size: 15px;
+    color: grey;
+    margin-top: 15px;
+}
+
+.ratings {
+    padding: 3px;
+    margin-right: 3px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.separator {
+    padding: 3px;
+}
+
+.eta {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 3px;
+}
+
+.estimated-cost {
+    padding: 3px;
+    margin-left: 3px;
+}
+
+.restaurant-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
 }
