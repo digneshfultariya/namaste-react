@@ -1,6 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
 import Loader from "./Loader";
 import { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
+import './../styles/body.css';
 
 function filterData(searchText, restaurants) {
   const filterData = restaurants.filter((restaurant) =>
@@ -61,9 +63,11 @@ const Body = () => {
       <div className="restaurant-list-container">
         {
           isLoading ? <Loader /> : (filteredRestaurants?.length === 0 ? <h1>No Restraunt match your Filter!!</h1> : filteredRestaurants.map((filteredRestaurant) => {
-            return <RestaurantCard {...filteredRestaurant.data}
+            return <Link to={`restaurants/${filteredRestaurant.data.id}`} className={"restaurant"} key={filteredRestaurant.data.id}>
+            <RestaurantCard {...filteredRestaurant.data}
                             key={filteredRestaurant.data.id}>
-                </RestaurantCard>;
+                </RestaurantCard>
+        </Link>
         }))
         }
       </div>

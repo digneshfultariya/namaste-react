@@ -1,0 +1,47 @@
+.restaurant-container > img{
+    width: 100%;
+}
+
+.names {
+    font-family: Dialog, serif;
+    font-size: 22px;
+    word-wrap: initial;
+}
+
+.categories {
+    font-family: Dialog, serif;
+    font-size: 15px;
+    color: grey;
+}
+
+.restaurant-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Dialog, serif;
+    font-size: 15px;
+    color: grey;
+    margin-top: 15px;
+}
+
+.ratings {
+    padding: 3px;
+    margin-right: 3px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.separator {
+    padding: 3px;
+}
+
+.eta {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 3px;
+}
+
+.estimated-cost {
+    padding: 3px;
+    margin-left: 3px;
+}

@@ -1,4 +1,6 @@
 import { IMG_CDN_URL } from "../Constants";
+import './../styles/restraurantCard.css';
+import './../styles/search.css';
 
 const RestaurantCard = ({
     name,
